@@ -34,6 +34,23 @@ This is a simple and feature-rich Todo app designed to help you manage tasks and
 2. **Package Manager**: Use npm or yarn to manage project dependencies.
 
 ### Installation:
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/realvishalrana/product-todo-app.git
+
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.

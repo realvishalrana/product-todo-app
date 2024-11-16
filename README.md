@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Todo App with Product Management
+
+## Overview
+This is a simple and feature-rich Todo app designed to help you manage tasks and products efficiently. The app includes user authentication, CRUD functionality for products, search and filter options, pagination, and more.
+
+### Features:
+1. **User Authentication**:
+   - Registration and login functionality.
+   - Form validation with regex for registration (name, email, password, gender, and user image).
+   - Store user data in **local storage** for persistence.
+   - Route protection to prevent unauthorized access.
+
+2. **CRUD Operations for Products**:
+   - Fields: Product Name, Category, SKU, Product Image, Original Price, Discount, Final Price (calculated), Timestamps (Created_at, Updated_at), and Actions (View, Edit, Delete).
+   - Store product data in **local storage**.
+   - View, edit, and delete products.
+
+3. **Product Filters**:
+   - Filter products by search (name and category).
+   - Price range filter.
+   - Sorting options (ascending and descending).
+   - Pagination with 5 to 15 records per page.
+
+4. **Home Page**:
+   - A user-friendly interface to view, add, edit, or delete tasks and products.
+   - Logged-in user's details are displayed in the header with a user profile icon.
+   - A popup appears when the user clicks on the profile icon, showing their registered details.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites:
+1. **Node.js**: Ensure that you have Node.js installed on your machine. If not, download it from [here](https://nodejs.org/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Package Manager**: Use npm or yarn to manage project dependencies.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+### Installation:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/realvishalrana/product-todo-app.git

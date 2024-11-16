@@ -1,24 +1,13 @@
 import React from "react";
 
 const ProductList = ({
-  products, // Assuming this is the full list of products
+  filteredProducts,
   filter,
   setFilter,
   handleEditProduct,
   handleDeleteProduct,
 }) => {
-  const filteredProducts = products.filter((product) => {
-    const matchesSearch =
-      product.productName.toLowerCase().includes(filter.search.toLowerCase()) ||
-      product.category.toLowerCase().includes(filter.search.toLowerCase());
-
-    const matchesPriceRange =
-      (filter.minPrice ? product.originalPrice >= filter.minPrice : true) &&
-      (filter.maxPrice ? product.originalPrice <= filter.maxPrice : true);
-
-    return matchesSearch && matchesPriceRange;
-  });
-
+  
   const totalPages = Math.ceil(filteredProducts.length / filter.pageSize);
 
   const handlePaginationChange = (page) => {

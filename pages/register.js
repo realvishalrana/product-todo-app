@@ -15,10 +15,10 @@ const registrationSchema = Yup.object().shape({
     .email("Invalid email format")
     .required("Email is required"),
   password: Yup.string()
-    // .matches(
-    //   /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/,
-    //   'Password must be at least 6 characters and contain at least one letter and one number'
-    // )
+    .matches(
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!#$%&*?@])[\d!#$%&*?@A-Za-z]{8,}$/,
+      'Contains at least 8 characters, 1 lower case (a-z) & 1 Upper case (A-Z), 1 number (0-9) & one special symbol (!@#$%^&*)',
+    )
     .required("Password is required"),
   gender: Yup.string().required("Gender is required"),
   userImage: Yup.mixed().required("User image is required"),

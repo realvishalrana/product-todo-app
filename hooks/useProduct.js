@@ -93,16 +93,16 @@ const useProduct = () => {
     }
 
     if (filter.sort) {
-      filteredProducts.sort((a, b) => {
+      filtered.sort((a, b) => {
         const priceA = Number(a.originalPrice);
         const priceB = Number(b.originalPrice);
 
         if (isNaN(priceA) || isNaN(priceB)) return 0;
 
         if (filter.sort === "asc") {
-          return priceA - priceB; 
+          return priceA - priceB;
         } else if (filter.sort === "desc") {
-          return priceB - priceA; 
+          return priceB - priceA;
         }
         return 0;
       });
